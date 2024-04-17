@@ -9,6 +9,7 @@ from django.views.generic.edit import CreateView
 # К импортам из django.urls добавьте импорт функции reverse_lazy
 from django.urls import include, path, reverse_lazy
 
+handler404 = 'core.views.page_not_found' 
 
 urlpatterns = [
     path('', include('pages.urls')),
